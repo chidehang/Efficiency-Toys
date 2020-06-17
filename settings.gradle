@@ -1,0 +1,3 @@
+rootProject.name='AOP Sample'
+include ':app'
+include ':lib_toys'
