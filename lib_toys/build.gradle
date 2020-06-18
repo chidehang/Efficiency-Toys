@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'android-aspectjx'
+apply from: 'publish_jcenter.gradle'
 
 android {
     compileSdkVersion 29
@@ -22,6 +23,9 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
