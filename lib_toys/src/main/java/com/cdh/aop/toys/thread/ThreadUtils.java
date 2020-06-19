@@ -6,8 +6,6 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Pair;
 
-import androidx.annotation.NonNull;
-
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -140,7 +138,7 @@ public class ThreadUtils {
         }
 
         @Override
-        public void handleMessage(@NonNull Message msg) {
+        public void handleMessage(Message msg) {
             if (msg.what == WHAT_RUN_ON_MAIN) {
                 Pair<Runnable, CountDownLatch> pair = (Pair<Runnable, CountDownLatch>) msg.obj;
                 try {
