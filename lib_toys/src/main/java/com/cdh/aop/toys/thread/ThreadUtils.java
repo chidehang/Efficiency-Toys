@@ -88,7 +88,7 @@ public class ThreadUtils {
 
         if (block) {
             try {
-                latch.wait();
+                latch.await();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
